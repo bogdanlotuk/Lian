@@ -22,8 +22,8 @@ header input {display: none;}
 #menu2 .container .container_wrap .menu2 li a {display: block; text-decoration: none; color: black; font-size: .8rem; font-weight: 900;padding-right: 20px;}
 #menu2 .container .container_wrap .menu2 li a:first-child{padding-left: 20px;}
 
-#items .container {display: block; width: 1200px; margin: 0 auto;background-color: #fafafa;}
-#items .container .container_wrap {display: flex;justify-content: space-around;}
+#items .container {display: block; max-width: 1200px; margin: 0 auto;background-color: #fafafa;}
+#items .container .container_wrap {display: flex;justify-content: space-around;flex-wrap: wrap;}
 #items .container .container_wrap .column {width: 30%; height: 1350px;}
 #items .container .container_wrap .column .item1 {height: 345px;margin-top: 30px; background-image: url(../img/1.png);background-position: center;}
 #items .container .container_wrap .column .item2 {height: 250px;margin-top: 35px; background-image: url(../img/2.png);background-position: center;background-size: cover;}
@@ -41,10 +41,12 @@ header input {display: none;}
 #items .container .load_more {width: 100%; height: 115px; display: flex; justify-content: center; align-items: center;}
 #items .container .load_more button {margin-top: -60px; color: white;background-color: black;border: none; width:125px;height: 30px;font-size: .8rem;}
 
-footer .container {display: block; width: 1600px; margin: 0 auto;}
+footer .container {display: flex; width: 1600px; margin: 0 auto; flex-flow: column;justify-content: center; align-items: center;}
+footer .container .container_wrap {width: 100%;}
 footer .container .container_wrap .logo {width: 100%; height: 145px;display: flex;justify-content: center; align-items: center;}
 footer .container .container_wrap .logo a {display: block;margin-top: 20px;}
-footer .container .container_wrap .social {width: 100%; height: 60px;border-top: 1px solid grey;border-bottom: 1px solid grey;}
+footer .container .container_wrap .social {width: 100%; height: 60px;display: flex; justify-content: center; align-items: center; border-top: 1px solid grey;border-bottom: 1px solid grey;}
+footer .container .container_wrap .social .social_wrap {width: 500px;display: flex;justify-content: space-between;align-items: center;}
 footer .container .container_wrap .all_rights {width: 100%;height: 70px; display: flex; justify-content: center;align-items: center;}
 footer .container .container_wrap .all_rights p {font-size: .8rem; padding-top: 15px;}
 footer .container .container_wrap .all_rights p span {font-weight: 600;}
